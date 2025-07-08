@@ -14,8 +14,8 @@ app.use(urlencoded({ extended: true }));
 
 connectDB();
 
-app.use("/api/v1", router);
-app.use("/api/v1/users", route);
+app.use("/api", router);
+app.use("/api/users", route);
 
 app.use(errorHandler);
 

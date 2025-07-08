@@ -22,6 +22,23 @@ const userSchema = mongoose.Schema(
       required: [true, "Please add password"],
       minlength: [6, "Password must be at least 6 characters"],
     },
+
+    phone: {
+      type: String,
+      required: [true, "Please add phone number"],
+      unique: true,
+      sparse: true,
+    },
+    securityQuestion: {
+      type: String,
+      required: [true, "Please add security question for password recovery"],
+    },
+    resetPasswordToken: {
+      type: String,
+    },
+    resetPasswordExpire: {
+      type: Date,
+    },
   },
   { timestamps: true }
 );
