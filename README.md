@@ -71,7 +71,7 @@ PORT=5000
 
 MONGO_URI=mongodb://localhost:27017/mern-auth
 # Or use MongoDB Atlas:
-# MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/mern-auth
+# MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/mern-auth
 
 JWT_SECRET=your-super-secret-jwt-key-change-this
 JWT_EXPIRE=7d
